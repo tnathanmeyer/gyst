@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/themes/light.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/themes/dark.css" />
+    <script type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/shoelace-autoloader.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GYST</title>
+  </head>
+  <body>
+    <h1>GYST</h1>
+    <h4>(Get Your ...stuff Together)</h4>
+    <form id="addItemForm">
+      <sl-input id="itemText" placeholder="Item Text" required></sl-input>
+      <sl-button type="submit" id="addItem">Add item</sl-button>
+    </form>
+    <h3>You have <span id="numItems">0</span> items</h3>
+    <table id="list"></table>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
